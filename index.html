@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDispley('7')">7</button>
+            <button onclick="appendToDispley('8')">8</button>
+            <button onclick="appendToDispley('9')">9</button>
+            <button class="operations" onclick="appendToDispley('+')">+</button>
+
+            <button onclick="appendToDispley('4')">4</button>
+            <button onclick="appendToDispley('5')">5</button>
+            <button onclick="appendToDispley('6')">6</button>
+            <button class="operations" onclick="appendToDispley('-')">-</button>
+
+            <button onclick="appendToDispley('1')">1</button>
+            <button onclick="appendToDispley('2')">2</button>
+            <button onclick="appendToDispley('3')">3</button>
+            <button class="operations" onclick="appendToDispley('*')">*</button>
+
+            <button onclick="appendToDispley('0')">0</button>
+            <button onclick="appendToDispley('.')">.</button>
+            <button class="clear" onclick="clearDisplay()">C</button>
+            <button class="operations" onclick="appendToDispley('/')">/</button>
+        </div>
+        <button id="answer" onclick="calculate()">=</button>
+        <p id="footer">
+            Copyright ©
+            <script>
+              document.write(new Date().getFullYear())
+            </script>
+            | Naveen
+          </p>  
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
